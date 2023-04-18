@@ -13,8 +13,8 @@ const styles = StyleSheet.create({
     shadowColor: COLORS.white,
   }),
   logoContainer: (selectedJob, item) => ({
-    width: 70,
-    height: 70,
+    width: 50,
+    height: 50,
     backgroundColor: selectedJob === item.job_id ? "#FFF" : COLORS.white,
     borderRadius: SIZES.medium,
     justifyContent: "center",
@@ -25,16 +25,16 @@ const styles = StyleSheet.create({
     height: "70%",
   },
   companyName: {
-    fontSize: SIZES.small,
+    fontSize: SIZES.medium,
     fontFamily: FONT.regular,
     color: "#B3AEC6",
     marginTop: SIZES.small / 1.5,
   },
   infoContainer: {
-    marginTop: SIZES.xlarge,
+    marginTop: SIZES.large,
   },
   jobName: (selectedJob, item) => ({
-    fontSize: SIZES.small,
+    fontSize: SIZES.large,
     fontFamily: FONT.medium,
     color: selectedJob === item.job_id ? COLORS.white : COLORS.primary,
   }),
@@ -44,9 +44,9 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     alignItems: "center",
   },
-  publisher: (selectedJob) => ({
+  publisher: (selectedJob, item) => ({
     fontSize: SIZES.medium - 2,
-    fontFamily: FONT.bold,
+    fontFamily: FONT.regular,
     color: selectedJob === item.job_id ? COLORS.white : COLORS.primary,
   }),
   location: {
